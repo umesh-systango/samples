@@ -9,6 +9,9 @@ namespace ADB2C.Lockout.Models
     {
         public int Count { get; set; }
         public long timeStamp { get; set; }
-
+        public DateTime LastFailedAttempt { get; set; }
+        public DateTime? LockoutStartTime { get; set; }
+        public bool IsLocked { get; set; }
+        public string UserName { get; set; }
     }
 }
